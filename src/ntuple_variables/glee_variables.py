@@ -1,4 +1,11 @@
 
+glee_scalar_non_training_vars = [
+    "reco_vertex_x",
+    "reco_vertex_y",
+    "reco_vertex_z",
+]
+
+
 glee_CRT_variables = [
     "CRT_dt",
     "CRT_hits_PE", # vector
@@ -234,4 +241,4 @@ glee_postprocessing_vars = [
 
 glee_training_vars = ["glee_" + var for var in glee_scalar_vars] + glee_postprocessing_vars
 
-glee_vars = glee_scalar_vars + glee_vector_vars
+glee_vars = glee_scalar_vars + glee_vector_vars + glee_scalar_non_training_vars
